@@ -1,18 +1,49 @@
-# React + Vite
+# 🧠 Quiz App - React Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project ini adalah aplikasi kuis interaktif berbasis web yang dibangun menggunakan ekosistem modern React dan Vite. Aplikasi ini dirancang untuk mendemonstrasikan pengelolaan state yang efisien, struktur folder yang modular, dan antarmuka yang responsif.
 
-Currently, two official plugins are available:
+> **ℹ️ Note:** Project ini dikembangkan sebagai bagian dari **Technical Assignment / Internship Program di Dot Indonesia**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Fitur Utama
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* **Interactive Quiz Interface**: Transisi soal yang mulus dan responsif.
+* **State Management**: Menggunakan Custom Hooks (`useQuiz`) untuk logika permainan.
+* **Clean Architecture**: Struktur folder terpisah antara `components`, `hooks`, dan `services`.
+* **Result Calculation**: Penghitungan skor otomatis di akhir sesi.
 
-Note: This will impact Vite dev & build performances.
+## 🛠️ Teknologi yang Digunakan
 
-## Expanding the ESLint configuration
+* **React JS** (v18+) - Library UI utama.
+* **Vite** - Build tool untuk performa pengembangan yang super cepat.
+* **JavaScript (ES6+)** - Logika pemrograman.git add .
+* **CSS 3** - Styling komponen.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Struktur Project
+
+Struktur folder disusun agar mudah dikembangkan (scalable):
+
+```bash
+src/
+├── components/    # Komponen UI (Button, Card, Form)
+│   ├── LoginForm.jsx
+│   ├── QuestionCard.jsx
+│   └── ...
+├── hooks/         # Custom Hooks (Logic pemisah)
+│   └── useQuiz.js
+├── services/      # API Calls / Data handling
+│   └── api.js
+├── App.jsx        # Root Component
+└── main.jsx       # Entry Point
+
+
+📦 Cara Menjalankan (Installation)
+Pastikan Node.js sudah terinstall, lalu jalankan perintah berikut di terminal:
+
+Bash
+# 1. Install Dependencies (WAJIB DILAKUKAN)
+# Jangan lupa langkah ini agar aplikasi tidak error!
+npm install
